@@ -2,6 +2,12 @@
 
 """
 (ref) https://youtu.be/58fuWVu5DVU?t=336
+
+
+
+* Run this code on VScode (it can be run with Jupyter notebook conntection)
+* Run each code cell with pressing 'shift + Enter'   
+* Like here -> https://blog.naver.com/cheeryun/221685740941
 """
 
 
