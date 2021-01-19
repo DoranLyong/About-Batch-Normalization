@@ -4,7 +4,6 @@
 (ref) https://youtu.be/58fuWVu5DVU?t=336
 
 
-
 * Run this code on VScode (it can be run with Jupyter notebook conntection)
 * Run each code cell with pressing 'shift + Enter'   
 * Like here -> https://blog.naver.com/cheeryun/221685740941
@@ -35,8 +34,8 @@ plt.show()
 
 # %% 표준화된 입력 벡터 
 """
-입력 벡터가 zero-centered 된다.
-
+- 입력 벡터가 zero-centered 된다. = 데이터의 분포가 평균 0 주변으로 흩어져 있다. 
+- 데이터 분포의 분산(variance) = 1
 """
 
 
