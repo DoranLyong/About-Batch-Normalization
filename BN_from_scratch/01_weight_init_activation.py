@@ -68,7 +68,6 @@ def input_standard(x, y):
     norm_data = np.array([norm_x, norm_y])
     return norm_data
 
-
  
 
 
@@ -82,6 +81,11 @@ x = input_data.T
 """
 - 입력 표준화를 적용했을 때와, 안 했을 때를 비교해보자. 
 - Affine 후에 적용하거나, 직전에 적용해서 서로 비교해보자. 
+
+    (ex1) BN - Affine - ReLU
+    (ex2) Affine - BN - ReLU
+    (ex3) Affine - ReLU - BN
+    
 """
 
 
@@ -102,13 +106,9 @@ for i in range(hidden_layer_size):
     x = input_standard(x[0,:], x[1,:])
     ##
 
-
-    a = np.dot(w, x)  # shape: (2, 1000)
-
-    
+    a = np.dot(w, x)  # shape: (2, 1000)   
     z = ReLU(a)
     
-
     activations[i] = z
 
 
