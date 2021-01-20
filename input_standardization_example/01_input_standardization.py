@@ -9,12 +9,15 @@
 * Like here -> https://blog.naver.com/cheeryun/221685740941
 """
 
+"""
+입력 표준화(input standardization) 테스트
+
+"""
+
 
 #%%
 import numpy as np 
 import matplotlib.pyplot as plt
-
-
 
 
 
