@@ -53,12 +53,31 @@ def ReLU(x):
     return np.maximum(0, x)
 
 
+
+def input_standard(x, y):
+    norm_x = (x - np.mean(x)) / np.std(x)
+    norm_y = (y - np.mean(y)) / np.std(y)
+
+
+    norm_data = np.array([norm_x, norm_y])
+    return norm_data
+
+
+ 
+
+
 node_num = 2  # 각 은닉층의 노드(뉴런) 수
 hidden_layer_size = 5  # 은닉층이 5개
 activations = {}  # 이곳에 활성화 결과를 저장
 
 
 x = input_data.T
+
+"""
+- 입력 표준화를 적용했을 때와, 안 했을 때를 비교해보자. 
+- Affine 후에 적용하거나, 직전에 적용해서 서로 비교해보자. 
+"""
+
 
 for i in range(hidden_layer_size):
     """
@@ -71,7 +90,16 @@ for i in range(hidden_layer_size):
     # 초깃값을 다양하게 바꿔가며 실험해보자！
     w = np.random.randn(node_num, node_num) * 0.01
 
+    """
+    입력 표준화 적용 
+    """
+    x = input_standard(x[0,:], x[1,:])
+    ##
+
+
     a = np.dot(w, x)  # shape: (2, 1000)
+
+
 
     z = ReLU(a)
 
@@ -98,4 +126,6 @@ for i, a in activations.items():
 #    plt.savefig("02_input_standardization.svg")
 
     plt.show()
+
+
 # %%
