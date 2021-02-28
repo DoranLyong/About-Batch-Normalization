@@ -3,7 +3,7 @@ Tutorial of Batch Normalization
 
 - BatchNorm 이 잘 되는 이유를 2015년에는 data-shift 와 관련지어서 설명한다. 즉, BN 레이어가 data-shift 를 막아주기 때문에 학습이 잘 된다는 것.
 - 하지만, 2018년 MIT에서는 data-shift 가 아닌 BN 레이어가 loss function을 smoothing 하기 때문에 학습이 더 잘 된다고 해석한다. 
-- 최근에는 BN이 잘 되는 이유르 loss function smoothing 으로 보고 연구가 진행되는 것 같다. 
+- 최근에는 BN이 잘 되는 이유를 loss function smoothing 으로 보고 연구가 진행되는 것 같다. 
 - 예시로 BN-layer 없이 유사한 효과를 내기위한 논문에서는 BN의 효과를 살리기 위해 gradient clipping을 사용해서 exploding gradient을 막는다. 
 
 
