@@ -14,3 +14,4 @@ Tutorial of Batch Normalization
 [1] [Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift, 2015, PMLR](http://proceedings.mlr.press/v37/ioffe15.html) / 초기 BN 논문은 Internal Covariate Shift(ICS)를 줄여서 성능을 높이기 위해 고안 됨.  <br/>
 [2] [How Does Batch Normalization Help Optimization?, 2018, NeurIPS](https://papers.nips.cc/paper/2018/hash/905056c1ac1dad141560467e0a99e1cf-Abstract.html) / BN이 왜 잘 되는지 원인을 분석한 논문. <br/>
 [3] [Batch Normalization - EXPLAINED!, CodeEmporium](https://youtu.be/DtEq44FTPM4) / <br/>
+[4] [High-Performance Large-Scale Image Recognition Without Normalization, 2021, arXiv](https://arxiv.org/abs/2102.06171) / BN 레이어 없이 그러한 효과를 내는 방법 제안<br/>
