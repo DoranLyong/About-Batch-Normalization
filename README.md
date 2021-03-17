@@ -1,4 +1,4 @@
-# About-Batch_Normalization
+# About Batch Normalization
 Tutorial of Batch Normalization
 
 - BatchNorm 이 잘 되는 이유를 2015년에는 data-shift 와 관련지어서 설명한다. 즉, BN 레이어가 data-shift 를 막아주기 때문에 학습이 잘 된다는 것.
